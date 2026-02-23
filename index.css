@@ -92,7 +92,7 @@ html {
     gap: 6px;
 }
 
-.callback a, p {
+.callback a, .callback p {
     color: var(--color-gold);
 
     text-decoration: none;
