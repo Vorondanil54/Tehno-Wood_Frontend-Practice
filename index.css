@@ -27,6 +27,10 @@ html {
     margin: 0 auto;
 }
 
+a, p, h1, h2, h3, button {
+    line-height: 130%;
+}
+
 /* Header, Navigation */
 
 .header {
