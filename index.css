@@ -56,12 +56,12 @@ a, p, h1, h2, h3, button {
     height: 51px;
 }
 
-.navigation-list {
+.navigation__list {
     display: flex;
     gap: 27px;
 }
 
-.navigation-list a {
+.navigation__list a {
     color: var(--color-white);
 
     font-size: 14px;
@@ -70,7 +70,7 @@ a, p, h1, h2, h3, button {
     text-transform: uppercase;
 }
 
-.navigation-list-item:first-child a {
+.navigation__list-item:first-child a {
     color: var(--color-gold);
 
     text-decoration: underline;
@@ -78,7 +78,7 @@ a, p, h1, h2, h3, button {
     position: relative;
 }
 
-.navigation-list-item:first-child a::before {
+.navigation__list-item:first-child a::before {
     content: '';
 
     width: 16px;
@@ -1609,12 +1609,12 @@ a, p, h1, h2, h3, button {
     height: 51px;
 }
 
-.navigation-list {
+.navigation__list {
     display: flex;
     gap: 27px;
 }
 
-.navigation-list a {
+.navigation__list a {
     color: var(--color-white);
 
     font-size: 14px;
@@ -1623,7 +1623,7 @@ a, p, h1, h2, h3, button {
     text-transform: uppercase;
 }
 
-.navigation-list-item:first-child a {
+.navigation__list-item:first-child a {
     color: var(--color-gold);
 
     text-decoration: underline;
@@ -1631,7 +1631,7 @@ a, p, h1, h2, h3, button {
     position: relative;
 }
 
-.navigation-list-item:first-child a::before {
+.navigation__list-item:first-child a::before {
     content: '';
 
     width: 16px;
