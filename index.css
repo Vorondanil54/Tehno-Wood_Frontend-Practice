@@ -421,17 +421,18 @@ a, p, h1, h2, h3, button {
 
 /*
     ====================================================================================================
-    Work Principles Section
+    Working
+    (Work Principles)
     ====================================================================================================
 */
 
-.work-principles-section {
+.working {
     height: 685px;
 
     background-color: var(--color-black);
 }
 
-.work-principles-section-content {
+.working__content {
     padding-top: 53px;
 
     display: flex;
@@ -439,27 +440,61 @@ a, p, h1, h2, h3, button {
     gap: 75px;
 }
 
-.work-principles-section h2 {
+.working__title {
     font-size: 36px;
     font-family: var(--font-roman);
 
     color: var(--color-white);
 }
 
-.work-principles-section-more {
+.working__info {
     height: 440px;
 
     display: flex;
     gap: 127px;
 }
 
-.work-principles-section-photos {
+.working__photos {
     position: relative;
 
     width: 540px;
 }
 
-.work-principles-section-border {
+.working-photos__grid {
+    height: 374px;
+
+    margin: 33px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 26px;
+}
+
+.working-photos__image {
+    border-radius: 2px;
+
+    z-index: 2;
+}
+
+.working-photos__image:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.working-photos__image:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.working-photos__image:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
+}
+
+
+.working__border {
     position: absolute;
     top: 0;
     left: -35px;
@@ -473,52 +508,22 @@ a, p, h1, h2, h3, button {
     pointer-events: none;
 }
 
-.work-principles-section-grid {
-    height: 374px;
 
-    margin: 33px 0;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 26px;
-}
-
-.work-principles-section-grid img {
-    border-radius: 2px;
-
-    z-index: 2;
-}
-
-.work-principles-section-grid img:first-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.work-principles-section-grid img:nth-child(2) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.work-principles-section-grid img:last-child {
-    grid-column: 2 / 3;
-    grid-row: 1 / span 2;
-}
-
-.work-principles-section-text {
-    width: 285px;
-
+.working__special {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
-.work-principles-section-text div {
+.special {
+    width: 285px;
+}
+
+.special__item {
     height: 80.5px;
 }
 
-.work-principles-section-text div hr {
+.special__line {
     width: 100%;
     height: 0.5px;
 
@@ -527,14 +532,16 @@ a, p, h1, h2, h3, button {
     opacity: 50%;
 }
 
-.work-principles-section-text div p {
+.special__number {
     color: var(--color-white);
-}
 
-.work-principles-section-text div p:first-of-type {
     opacity: 50%;
 
     margin: 2.5px 0 9px 0;
+}
+
+.special__text {
+    color: var(--color-white);
 }
 
 /*
